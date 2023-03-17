@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.eot?#iefix") format("embedded-opentype"), url("./icons.woff2") format("woff2"), url("./icons.woff") format("woff"), url("./icons.ttf") format("truetype"), url("./icons.svg#icons") format("svg"); }
+  
+  i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  
+  .icon-cartas-de-servicos:before {
+    content: "\f101"; }
+  
+  .icon-e-ouv:before {
+    content: "\f102"; }
+  
+  .icon-email:before {
+    content: "\f103"; }
+  
+  .icon-facebook:before {
+    content: "\f104"; }
+  
+  .icon-governo:before {
+    content: "\f105"; }
+  
+  .icon-imagens:before {
+    content: "\f106"; }
+  
+  .icon-instagram:before {
+    content: "\f107"; }
+  
+  .icon-play:before {
+    content: "\f108"; }
+  
+  .icon-radio:before {
+    content: "\f109"; }
+  
+  .icon-servicos:before {
+    content: "\f10a"; }
+  
+  .icon-transparencia:before {
+    content: "\f10b"; }
+  
+  .icon-twitter:before {
+    content: "\f10c"; }
+  
+  .icon-youtube:before {
+    content: "\f10d"; }
