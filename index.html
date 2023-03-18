@@ -30,30 +30,120 @@
 <link rel='dns-prefetch' href='#' />
 		                <!-- CSS externos -->
 <link rel='stylesheet' id='pfc-style-css'  href='http://www.ms.gov.br/wp-content/plugins/posts-from-category/assets/pfc-style.css?ver=4.9.20' type='text/css' media='all' />
+
 <link rel='stylesheet' id='tribe-common-skeleton-style-css'  href='http://www.ms.gov.br/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.13.0.1' type='text/css' media='all' />
+
 <link rel='stylesheet' id='tribe-tooltip-css'  href='http://www.ms.gov.br/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.13.0.1' type='text/css' media='all' />
+
 <link rel='stylesheet' id='contact-form-7-css'  href='http://www.ms.gov.br/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+
 <link rel='stylesheet' id='vac-style-css'  href='http://www.ms.gov.br/wp-content/plugins/vacinometro-ms/public/css/vac-style.css?ver=4.9.20' type='text/css' media='all' />
-<link rel='stylesheet' id='cookie-law-info-css'  href='http://www.ms.gov.br/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=2.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='http://www.ms.gov.br/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=2.0.1' type='text/css' media='all' />
+
+<link rel='stylesheet' id='cookie-law-info-css'  href='wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css' type='text/css' media='all' />
+
+
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css' type='text/css' media='all' />
+
 <link rel='stylesheet' id='slider-css'  href='http://www.ms.gov.br/wp-content/themes/portal-do-ms/dist/css/lightslider.min.css?ver=1.1' type='text/css' media='all' />
+
 <link rel='stylesheet' id='tablepress-default-css'  href='http://www.ms.gov.br/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.1' type='text/css' media='all' />
+
 <link rel='stylesheet' id='wp-paginate-css'  href='http://www.ms.gov.br/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.1.6' type='text/css' media='screen' />
+
 <script type='text/javascript' src='http://www.ms.gov.br/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 
 
 <script type='tipe/javascript' src="wp-includes/js/jquery/jquery-migrate.min.js"></script>
 
 <script type='text/javascript' src='http://www.ms.gov.br/wp-content/plugins/posts-from-category/assets/pfc-custom.js?ver=4.0.1'></script>
+
+<!-- termos para decidir aceitar -->
 <script type='text/javascript'>
     /* <![CDATA[ */ 
     
-    var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
-    var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#0c0c0c","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#61a229","button_1_button_hover":"#4e8221","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#3566bb","button_3_button_hover":"#2a5296","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#333333","button_4_as_button":"","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
-    var log_object = {"ajax_url":"http:\/\/www.ms.gov.br\/wp-admin\/admin-ajax.php"};
+    var Cli_Data = {
+        "nn_cookie_ids":[],
+        "cookielist":[],
+        "non_necessary_cookies":[],
+        "ccpaEnabled":"",
+        "ccpaRegionBased":"",
+        "ccpaBarEnabled":"",
+        "ccpaType":"gdpr",
+        "js_blocking":"1",
+        "custom_integration":"",
+        "triggerDomRefresh":"",
+        "secure_cookies":""
+    };
+    
+    var cli_cookiebar_settings = {
+        "animate_speed_hide":"500",
+        "animate_speed_show":"500",
+        "background":"#0c0c0c",
+        "border":"#b1a6a6c2",
+        "border_on":"",
+        "button_1_button_colour":"#0074D9", // blue color
+        "button_1_button_hover":"#005cb2", // darker blue color on hover
+        "button_1_link_colour":"#fff",
+        "button_1_as_button":"1",
+        "button_1_new_win":"",
+        "button_2_button_colour":"#333",
+        "button_2_button_hover":"#292929",
+        "button_2_link_colour":"#444",
+        "button_2_as_button":"",
+        "button_2_hidebar":"",
+        "button_3_button_colour":"#3566bb",
+        "button_3_button_hover":"#2a5296",
+        "button_3_link_colour":"#fff",
+        "button_3_as_button":"1",
+        "button_3_new_win":"",
+        "button_4_button_colour":"#000",
+        "button_4_button_hover":"#000000",
+        "button_4_link_colour":"#333333",
+        "button_4_as_button":"",
+        "button_7_button_colour":"#61a229",
+        "button_7_button_hover":"#4e8221",
+        "button_7_link_colour":"#fff",
+        "button_7_as_button":"1",
+        "button_7_new_win":"",
+        "font_family":"inherit",
+        "header_fix":"",
+        "notify_animate_hide":"1",
+        "notify_animate_show":"",
+        "notify_div_id":"#cookie-law-info-bar",
+        "notify_position_horizontal":"right",
+        "notify_position_vertical":"bottom",
+        "scroll_close":"",
+        "scroll_close_reload":"",
+        "accept_close_reload":"",
+        "reject_close_reload":"",
+        "showagain_tab":"",
+        "showagain_background":"#fff",
+        "showagain_border":"#000",
+        "showagain_div_id":"#cookie-law-info-again",
+        "showagain_x_position":"100px",
+        "text":"#ffffff",
+        "show_once_yn":"",
+        "show_once":"10000",
+        "logging_on":"",
+        "as_popup":"",
+        "popup_overlay":"1",
+        "bar_heading_text":"",
+        "cookie_bar_as":"banner",
+        "popup_showagain_position":"bottom-right",
+        "widget_position":"left"
+    };
+    
+    var log_object = {
+        "ajax_url":"http:\/\/www.ms.gov.br\/wp-admin\/admin-ajax.php"
+    };
+    
     /* ]]> */
-    </script>
-<script type='text/javascript' src='http://www.ms.gov.br/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=2.0.1'></script>  
+</script>
+
+
+<script type='text/javascript' src='http://www.ms.gov.br/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=2.0.1'>
+
+</script>  
 <link rel='https://api.w.org/' href='http://www.ms.gov.br/wp-json/' />
 <link rel="canonical" href="http://www.ms.gov.br/" />
 <link rel='shortlink' href='http://www.ms.gov.br/' />
@@ -63,17 +153,20 @@
 
 <link rel='stylesheet' type='text/css' href='../../wp-content/plugins/dstk-gov//css/dstk-gov.css' />
 
-<script src='../../wp-content/plugins/dstk-gov//js/dstk-gov.js'></script><!-- <meta name="NextGEN" version="3.2.19" /> -->
-<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="http://www.ms.gov.br">
-<link rel="https://theeventscalendar.com/" href="http://www.ms.gov.br/wp-json/tribe/events/v1/" />
+<script src='../../wp-content/plugins/dstk-gov//js/dstk-gov.js'>
 
-<link rel="icon" href="http://www.ms.gov.br/wp-content/uploads/sites/150/2016/03/cropped-topo-brasao-1-32x32.png" sizes="32x32" />
 
-<link rel="icon" href="http://www.ms.gov.br/wp-content/uploads/sites/150/2016/03/cropped-topo-brasao-1-192x192.png" sizes="192x192" />
+</script><!-- <meta name="NextGEN" version="3.2.19" /> -->
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="#">
+<link rel="#" href="#" />
 
-<link rel="apple-touch-icon-precomposed" href="http://www.ms.gov.br/wp-content/uploads/sites/150/2016/03/cropped-topo-brasao-1-180x180.png" />
+<link rel="icon" href="#" sizes="32x32" />
 
-<meta name="msapplication-TileImage" content="http://www.ms.gov.br/wp-content/uploads/sites/150/2016/03/cropped-topo-brasao-1-270x270.png" />
+<link rel="icon" href="#" sizes="192x192" />
+
+<link rel="apple-touch-icon-precomposed" href="#" />
+
+<meta name="msapplication-TileImage" content="#" />
 
             <!-- style da paginas -->
 		<style type="text/css" id="wp-custom-css">
@@ -117,7 +210,12 @@
 <link rel='shortlink' href='http://www.ms.gov.br/' />
 <link rel="alternate" type="application/json+oembed" href="http://www.ms.gov.br/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.ms.gov.br%2F" />
 <link rel="alternate" type="text/xml+oembed" href="http://www.ms.gov.br/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.ms.gov.br%2F&#038;format=xml" />
-<link rel='stylesheet' type='text/css' href='../../wp-content/plugins/dstk-gov//css/dstk-gov.css' /><script src='../../wp-content/plugins/dstk-gov//js/dstk-gov.js'></script><!-- <meta name="NextGEN" version="3.2.19" /> -->
+<link rel='stylesheet' type='text/css' href='../../wp-content/plugins/dstk-gov//css/dstk-gov.css' />
+<script src='../../wp-content/plugins/dstk-gov//js/dstk-gov.js'>
+
+</script>
+
+<!-- <meta name="NextGEN" version="3.2.19" /> -->
 <meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="http://www.ms.gov.br">
 <link rel="https://theeventscalendar.com/" href="http://www.ms.gov.br/wp-json/tribe/events/v1/" />
 <link rel="icon" href="#" sizes="32x32" />
@@ -177,8 +275,8 @@
                               </a></i></a></li>
                             <li><a href='#' target='_blank'><i class='icon-twitter'></i></a></li>
                             <li><a href='#' target='_blank'><i class='icon-youtube'></i></a></li>
-                            <li><a href='#' target='_blank'><img src='http://www.ms.gov.br/wp-content/themes/portal-do-ms/dist/img/icone-telegram.png' id='icone-telegram'></a></li>
-                            <li><a href='#' target='_blank'><img src='http://www.ms.gov.br/wp-content/themes/portal-do-ms/dist/img/icone-tiktok.png' id='icone-tiktok'></a></li>                        
+                            <li><a href='#' target='_blank'><img src='' id='icone-telegram'></a></li>
+                            <li><a href='#' target='_blank'><img src='' id='icone-tiktok'></a></li>                        
                         </ul>
                     </div>
                     
@@ -259,7 +357,7 @@
 		<div class="col-12">
 			
 				        <article id="post-428277" class="text-center post-428277 post type-post status-publish format-status has-post-thumbnail hentry category-defesa-sanitaria category-ms-especial category-fiscalizacao category-sanidade-animal post_format-post-format-status">
-				            <h1><a href="http://www.ms.gov.br/vigilancia-contra-influenza-aviaria-garante-producao-segura-para-mato-grosso-do-sul/">Vigilância contra influenza aviária garante produção segura para Mato Grosso do Sul</a></h1>
+				            <h1><a href="http://www.ms.gov.br/vigilancia-contra-influenza-aviaria-garante-producao-segura-para-mato-grosso-do-sul/">Matéria Principal</a></h1>
 							<span id="subtitulo"></span>
 				        </article>
 
@@ -272,8 +370,8 @@
 				<ul id="slider">				<li>
 					<div  id="post-428601" class="sliderBox post-428601 post type-post status-publish format-standard has-post-thumbnail hentry category-acao-de-governo tag-destaque1">
 						<a href="http://www.ms.gov.br/em-encontro-nacional-governador-destaca-que-defensoria-publica-tem-cumprido-seu-papel-no-estado/">
-							<img width="768" height="425" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2023/03/Foto-Saul-Schramm-5-5-768x425.jpg" class="attachment-video-audio size-video-audio wp-post-image" alt="Foto Saul Schramm" />						</a>
-						<div style="border-bottom-color: #a3d900">
+							<img width="768" height="425" src="#" class="attachment-video-audio size-video-audio wp-post-image" alt="Foto Saul Schramm" />						</a>
+						<div style="border-bottom-color: #0e0bcfd3">
 														<h2>
 								<a href="http://www.ms.gov.br/em-encontro-nacional-governador-destaca-que-defensoria-publica-tem-cumprido-seu-papel-no-estado/">
 									Em encontro nacional, governador destaca que Defensoria Pública tem cumprido seu papel no Estado								</a>
@@ -284,8 +382,8 @@
 							<li>
 					<div  id="post-428602" class="sliderBox post-428602 post type-post status-publish format-standard has-post-thumbnail hentry category-geral tag-destaque1">
 						<a href="http://www.ms.gov.br/governo-lanca-licitacoes-para-novas-obras-em-corumba-inocencia-e-bonito/">
-							<img width="768" height="425" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2022/04/Aeroporto-de-Bonito-Voo-inaugural-GOl-CGH-BYO-Foto-Silvio-Andrade-730x480.jpeg" class="attachment-video-audio size-video-audio wp-post-image" alt="" srcset="http://www.ms.gov.br/wp-content/uploads/sites/150/2022/04/Aeroporto-de-Bonito-Voo-inaugural-GOl-CGH-BYO-Foto-Silvio-Andrade-730x480.jpeg 768w, http://www.ms.gov.br/wp-content/uploads/sites/150/2022/04/Aeroporto-de-Bonito-Voo-inaugural-GOl-CGH-BYO-Foto-Silvio-Andrade-730x480-300x166.jpeg 300w, http://www.ms.gov.br/wp-content/uploads/sites/150/2022/04/Aeroporto-de-Bonito-Voo-inaugural-GOl-CGH-BYO-Foto-Silvio-Andrade-730x480-350x194.jpeg 350w" sizes="(max-width: 768px) 100vw, 768px" />						</a>
-						<div style="border-bottom-color: #a3d900">
+							<img width="768" height="425" src="#" class="attachment-video-audio size-video-audio wp-post-image" alt="" srcset="#" />						</a>
+						<div style="border-bottom-color: #0e0bcfd3">
 														<h2>
 								<a href="http://www.ms.gov.br/governo-lanca-licitacoes-para-novas-obras-em-corumba-inocencia-e-bonito/">
 									Governo lança licitações para novas obras em Corumbá, Inocência e Bonito								</a>
@@ -296,8 +394,8 @@
 							<li>
 					<div  id="post-428581" class="sliderBox post-428581 post type-post status-publish format-standard has-post-thumbnail hentry category-bioparque-pantanal tag-destaque1">
 						<a href="http://www.ms.gov.br/bioparque-pantanal-entra-na-lista-anual-dos-melhores-lugares-do-mundo-da-time/">
-							<img width="768" height="425" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Bioparque-Pantanal-Fto-Bruno-Rezende-3-768x425.jpg" class="attachment-video-audio size-video-audio wp-post-image" alt="" srcset="http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Bioparque-Pantanal-Fto-Bruno-Rezende-3-768x425.jpg 768w, http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Bioparque-Pantanal-Fto-Bruno-Rezende-3-300x166.jpg 300w, http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Bioparque-Pantanal-Fto-Bruno-Rezende-3-1024x567.jpg 1024w, http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Bioparque-Pantanal-Fto-Bruno-Rezende-3-350x194.jpg 350w" sizes="(max-width: 768px) 100vw, 768px" />						</a>
-						<div style="border-bottom-color: #a3d900">
+							<img width="768" height="425" src="#" class="attachment-video-audio size-video-audio wp-post-image" alt="" srcset="#" sizes="(max-width: 768px) 100vw, 768px" />						</a>
+						<div style="border-bottom-color: #0e0bcfd3">
 														<h2>
 								<a href="http://www.ms.gov.br/bioparque-pantanal-entra-na-lista-anual-dos-melhores-lugares-do-mundo-da-time/">
 									Bioparque Pantanal entra na lista anual dos melhores lugares do mundo da TIME								</a>
@@ -308,8 +406,8 @@
 							<li>
 					<div  id="post-428554" class="sliderBox post-428554 post type-post status-publish format-standard has-post-thumbnail hentry category-inclusao-social tag-destaque1">
 						<a href="http://www.ms.gov.br/nacional-da-paracanoagem-em-ms-e-palco-para-inclusao-da-pessoa-com-deficiencia/">
-							<img width="768" height="425" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2023/03/Foto-Yuri-MarinhoCBCa-768x425.jpeg" class="attachment-video-audio size-video-audio wp-post-image" alt="" />						</a>
-						<div style="border-bottom-color: #a3d900">
+							<img width="768" height="425" src="#" class="attachment-video-audio size-video-audio wp-post-image" alt="" />						</a>
+						<div style="border-bottom-color: #0e0bcfd3">
 														<h2>
 								<a href="http://www.ms.gov.br/nacional-da-paracanoagem-em-ms-e-palco-para-inclusao-da-pessoa-com-deficiencia/">
 									Nacional da paracanoagem em MS é palco para inclusão da pessoa com deficiência								</a>
@@ -325,7 +423,7 @@
 				
 				<div class="meta">
 					 
-					<span class='badge' style='background-color:#a3d900;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/detran/">Detran</a></strong></span> - 15 março 2023				</div>
+					<span class='badge' style='background-color:#0e0bcfd3;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/detran/">Detran</a></strong></span> - 15 março 2023				</div>
 
 				<h2>
 					<a href="http://www.ms.gov.br/detran-convoca-115-beneficiarios-do-cnh-ms-social-de-corumba-e-ladario/">
@@ -337,7 +435,7 @@
 				
 				<div class="meta">
 					 
-					<span class='badge' style='background-color:#a3d900;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/saude/">Saúde</a></strong></span> - 15 março 2023				</div>
+					<span class='badge' style='background-color:#0e0bcfd3;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/saude/">Saúde</a></strong></span> - 15 março 2023				</div>
 
 				<h2>
 					<a href="http://www.ms.gov.br/saude-oferece-capacitacao-com-foco-no-manejo-clinico-do-paciente-com-chikungunya/">
@@ -349,7 +447,7 @@
 				
 				<div class="meta">
 					 
-					<span class='badge' style='background-color:#a3d900;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/geral/">Geral</a></strong></span> - 15 março 2023				</div>
+					<span class='badge' style='background-color:#0e0bcfd3;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/geral/">Geral</a></strong></span> - 15 março 2023				</div>
 
 				<h2>
 					<a href="http://www.ms.gov.br/sanesul-faz-14-campanhas-educativas-e-contempla-7-mil-criancas-e-adolescentes-no-mes-da-agua/">
@@ -361,7 +459,7 @@
 				
 				<div class="meta">
 					 
-					<span class='badge' style='background-color:#a3d900;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/agenda/">Agenda</a></strong></span> - 15 março 2023				</div>
+					<span class='badge' style='background-color:#0e0bcfd3;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/agenda/">Agenda</a></strong></span> - 15 março 2023				</div>
 
 				<h2>
 					<a href="http://www.ms.gov.br/relicitacao-da-br-163-rota-do-pantanal-e-tema-de-audiencia-publica-na-capital/">
@@ -373,7 +471,7 @@
 				
 				<div class="meta">
 					 
-					<span class='badge' style='background-color:#a3d900;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/procon/">Procon</a></strong></span> - 15 março 2023				</div>
+					<span class='badge' style='background-color:#0e0bcfd3;'><strong><a class="category-link" href="http://www.ms.gov.br/Geral/procon/">Procon</a></strong></span> - 15 março 2023				</div>
 
 				<h2>
 					<a href="http://www.ms.gov.br/no-dia-mundial-do-consumidor-procon-ms-divulga-balanco-e-aponta-servicos-lideres-em-reclamacoes/">
@@ -382,7 +480,7 @@
 				
 			</div>
 						</div>
-				<a class='btn btn-large btn-success d-block mt-3' href='http://www.ms.gov.br/ultimas-noticias/'><strong>ÚLTIMAS NOTÍCIAS</strong></a>
+				<a class='btn btn-large btn-success d-block mt-3' href='#'><strong>ÚLTIMAS NOTÍCIAS</strong></a>
 			
 			</div>
 			
@@ -394,7 +492,7 @@
 	
 	
 	<div class="container banner-aquario">
-		<a href="#"><img src="http://www.ms.gov.br/wp-content/themes/portal-do-ms/dist/img/web_banner.gif" alt="banner novo aquario"></a>
+		<a href="#"><img src="#" alt="banner novo aquario"></a>
 	</div>
 
 
@@ -472,16 +570,26 @@
             </div>  
         </div>
 <div id='' class='container'> <div id='' class='row'> <div id="media_image-3" class="banner-widget  text-center col-md-4 col-12 widget_media_image">
-    <a href="#"><img width="301" height="139" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2021/12/epe.jpg" class="image wp-image-385188  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="http://www.ms.gov.br/wp-content/uploads/sites/150/2021/12/epe.jpg 301w, http://www.ms.gov.br/wp-content/uploads/sites/150/2021/12/epe-300x139.jpg 300w" sizes="(max-width: 301px) 100vw, 301px" /></a></div><div id="media_image-4" class="banner-widget  text-center col-md-4 col-12 widget_media_image">
-        <a href="#"><img width="301" height="139" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2021/04/ms.png" class="image wp-image-350179  attachment-full size-full" alt="p m i 01/2021 Centrais de Energia fotovoltaica." style="max-width: 100%; height: auto;" srcset="http://www.ms.gov.br/wp-content/uploads/sites/150/2021/04/ms.png 301w, http://www.ms.gov.br/wp-content/uploads/sites/150/2021/04/ms-300x139.png 300w" sizes="(max-width: 301px) 100vw, 301px" /></a></div>
-        <div id="media_image-5" class="banner-widget  text-center col-md-4 col-12 widget_media_image"><a href="#"><img width="300" height="138" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2021/12/consulta-publica-01-2021-MS-112-300x138.png" class="image wp-image-383869  attachment-medium size-medium" alt="consulta publica 01 2021 MS 112" style="max-width: 100%; height: auto;" /></a></div></div></div><section id="noticias" class="container">
+    <a href="#">
+		<img width="301" height="139" src="#" class="image wp-image-385188  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="#" sizes="(max-width: 301px) 100vw, 301px" /></a></div>
+		<div id="media_image-4" class="banner-widget  text-center col-md-4 col-12 widget_media_image">
+        <a href="#">
+			<img width="301" height="139" src="#" class="image wp-image-350179  attachment-full size-full" alt="p m i 01/2021 Centrais de Energia fotovoltaica." style="max-width: 100%; height: auto;" srcset="#" sizes="(max-width: 301px) 100vw, 301px" /></a></div>
+        <div id="media_image-5" class="banner-widget  text-center col-md-4 col-12 widget_media_image">
+			<a href="#">
+			<img width="300" height="138" src="#" class="image wp-image-383869  attachment-medium size-medium" alt="consulta publica 01 2021 MS 112" style="max-width: 100%; height: auto;" />
+		</a>
+	</div>
+</div>
+</div>
+<section id="noticias" class="container">
 	<div class="row row-flex">
 		
 					<article class="col-12 col-lg-4 mb-4">
-						<div class="postBox" style="border-top-color: #a3d900">
-															<a href="#"><img width="350" height="240" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2023/03/Foto-Wander-Roberto-Inovafoto-CBV-350x240.jpeg" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="Foto de arquivo: Wander Roberto - Inovafoto-CBV" /></a>
+						<div class="postBox" style="border-top-color: #1410dd">
+															<a href="#"><img width="350" height="240" src="#" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="Foto de arquivo: Wander Roberto - Inovafoto-CBV" /></a>
 								<div>	
-									<span class="badge" style="background-color: #a3d900">
+									<span class="badge" style="background-color: #1410dd">
 										<a class="category-link" href="#">Esporte</a>									</span>
 									<h3>
 										<a href="#">Etapas do Circuito Brasileiro de Vôlei de Praia são confirmadas em Mato ...</a>
@@ -492,10 +600,10 @@
 					</article>
 				
 					<article class="col-12 col-lg-4 mb-4">
-						<div class="postBox" style="border-top-color: #a3d900">
-															<a href="#"><img width="350" height="240" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2023/03/Portal-da-Transparência-Foto-Álvaro-Rezende-350x240.jpg" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="" /></a>
+						<div class="postBox" style="border-top-color: #1410dd">
+															<a href="#"><img width="350" height="240" src="#" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="" /></a>
 								<div>	
-									<span class="badge" style="background-color: #a3d900">
+									<span class="badge" style="background-color: #1410dd">
 										<a class="category-link" href="#">Gestão Pública</a>									</span>
 									<h3>
 										<a href="#">Entre os melhores do Brasil em transparência, MS terá novo portal e açõe...</a>
@@ -506,10 +614,11 @@
 					</article>
 				
 					<article class="col-12 col-lg-4 mb-4">
-						<div class="postBox" style="border-top-color: #a3d900">
-															<a href="#"><img width="350" height="240" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2022/12/Tempo-Fto-Bruno-Rezende-350x240.jpg" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="" /></a>
+						<div class="postBox" style="border-top-color: #1410dd">
+															<a href="#">
+																<img width="350" height="240" src="#" alt="" /></a>
 								<div>	
-									<span class="badge" style="background-color: #a3d900">
+									<span class="badge" style="background-color: #1410dd">
 										<a class="category-link" href="#">Tempo</a>									</span>
 									<h3>
 										<a href="#">Quinta-feira terá pancadas de chuvas isoladas em Mato Grosso do Sul</a>
@@ -520,43 +629,45 @@
 					</article>
 				
 					<article class="col-12 col-lg-4 mb-4">
-						<div class="postBox" style="border-top-color: #a3d900">
-															<a href="#"><img width="350" height="240" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2023/03/WhatsApp-Image-2023-03-15-at-18.13.59-1-350x240.jpeg" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="" /></a>
+						<div class="postBox" style="border-top-color: #1410dd">
+															<a href="#">
+																<img width="350" height="240" src="#" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="" /></a>
 								<div>	
-									<span class="badge" style="background-color: #a3d900">
-										<a class="category-link" href="#">Geral</a>									</span>
+									<span class="badge" style="background-color: #1410dd">
+										<a class="category-link" href="#">#</a>									</span>
 									<h3>
-										<a href="#">Governo abre diálogo para implantar projeto de entidade que dá assistênc...</a>
+										<a href="#">#</a>
 									</h3>
-									<a href="#">A construção de um espaço que sirva para ressocializar apenados em Mato Grosso do Sul está sendo pleiteada...</a>
+									<a href="#">#</a>
 								</div>
 						</div>
 					</article>
 				
 					<article class="col-12 col-lg-4 mb-4">
-						<div class="postBox" style="border-top-color: #a3d900">
-															<a href="#"><img width="350" height="240" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2023/03/WhatsApp-Image-2023-03-15-at-14.56.42-350x240.jpeg" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="" /></a>
+						<div class="postBox" style="border-top-color: #1410dd">
+															<a href="#">
+																<img width="350" height="240" src="#" alt="" /></a>
 								<div>	
-									<span class="badge" style="background-color: #a3d900">
-										<a class="category-link" href="#">Agenda</a>									</span>
+									<span class="badge" style="background-color: #1410dd">
+										<a class="category-link" href="#">##</a>									</span>
 									<h3>
-										<a href="#">Mulheres terão apoio do Governo para ampliar inserção no mercado de trab...</a>
+										<a href="#">#</a>
 									</h3>
-									<a href="#">As mulheres respondem por 44,7% dos 161 mil microempreendedores individuais ativos em Mato Grosso do Sul ou o...</a>
+									<a href="#">#</a>
 								</div>
 						</div>
 					</article>
 				
 					<article class="col-12 col-lg-4 mb-4">
-						<div class="postBox" style="border-top-color: #a3d900">
-															<a href="#"><img width="350" height="240" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2023/03/Ronda-escolar-Foto-Bruno-Rezende-02-350x240.jpg" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="" /></a>
+						<div class="postBox" style="border-top-color: #1410dd">
+															<a href="#"><img width="350" height="240" src="#	" class="attachment-post-thumb-crpd size-post-thumb-crpd wp-post-image" alt="" /></a>
 								<div>	
-									<span class="badge" style="background-color: #a3d900">
-										<a class="category-link" href="#">Geral</a>									</span>
+									<span class="badge" style="background-color: #1410dd">
+										<a class="category-link" href="#">#</a>									</span>
 									<h3>
-										<a href="#">Avaliação internacional aponta resultados positivos do programa &#8220;E...</a>
+										<a href="#">#</a>
 									</h3>
-									<a href="#">O programa “Escola Segura, Família Forte”, realizado nas unidades da REE (Rede Estadual de Ensino) e...</a>
+									<a href="#">#</a>
 								</div>
 						</div>
 					</article>
@@ -571,7 +682,7 @@
                     <div id="post-405209" class="videoBox">
                     <a class="badge badge-danger" href="#">Videos</a>
                     <a href="#">
-                        <img width="768" height="425" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Entrega-de-Cobertores-Fto-Chico-Ribeiro-8-768x425.jpg" class="attachment-video-audio size-video-audio wp-post-image" alt="" srcset="http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Entrega-de-Cobertores-Fto-Chico-Ribeiro-8-768x425.jpg 768w, http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Entrega-de-Cobertores-Fto-Chico-Ribeiro-8-300x166.jpg 300w, http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Entrega-de-Cobertores-Fto-Chico-Ribeiro-8-1024x567.jpg 1024w, http://www.ms.gov.br/wp-content/uploads/sites/150/2022/05/Entrega-de-Cobertores-Fto-Chico-Ribeiro-8-350x194.jpg 350w" sizes="(max-width: 768px) 100vw, 768px" /><h5>Aqueça uma Vida: 80 mil serão distribuídos até quinta-feira</h5>                        <span id="videoBoxButton"></span>
+                        <img width="768" height="425" src="#" class="attachment-video-audio size-video-audio wp-post-image" alt="" srcset="#" sizes="(max-width: 768px) 100vw, 768px" /><h5>####</h5>                        <span id="videoBoxButton"></span>
                     </a>
                 </div>
                 <div class="text-center mt-3">
@@ -581,9 +692,9 @@
 		<div class="col-lg-6 col-12">
 			<section id="home_audio">
                     <div id="post-428410" class="audioBox">
-                    <a class="badge badge-success" href="http://www.ms.gov.br/Geral/radio/">Rádio</a>
+                    <a class="badge badge-success" href="#">Rádio</a>
                     <a href="#">
-                        <img width="768" height="425" src="http://www.ms.gov.br/wp-content/uploads/sites/150/2023/03/PRF-carreta-que-vai-atender-os-indígenas-em-Dourados-Foto-PRF-2-768x425.jpeg" class="attachment-video-audio size-video-audio wp-post-image" alt="" /><h5>Segurança Pública realizará ação educativa e social nas aldeias indígenas de Dourados</h5>                        <span id="audioBoxButton"></span>
+                        <img width="768" height="425" src="#" class="attachment-video-audio size-video-audio wp-post-image" alt="" /><h5>#</h5>                        <span id="audioBoxButton"></span>
                     </a>
                 </div>
                 <div class="text-center mt-3">
@@ -690,27 +801,34 @@
 			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 				<h3 class="titulo-menu-rodape">Assitência</h3>
 				
-				<div class="menu-rodape-governo-container"><ul id="menu-rodape-governo" class="menu"><li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="http://www.ms.gov.br/institucional">Institucional</a></li>
+				<div class="menu-rodape-governo-container"><ul id="menu-rodape-governo" class="menu"><li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="#">Institucional</a></li>
 <li id="menu-item-123058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123058"><a href="#">Planejamento</a></li>
 <li id="menu-item-239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-239"><a href="#">Conheça MS</a></li>
 <li id="menu-item-240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-240"><a href="#">Invista MS</a></li>
 <li id="menu-item-241" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-241"><a href="#">Notícias</a></li>
 <li id="menu-item-365" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-365"><a href="#">Sala de Imprensa</a></li>
-<li id="menu-item-124368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124368"><a href="http://www.ms.gov.br/lista-de-autoridades/">Lista de Autoridades</a></li>
+<li id="menu-item-124368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124368"><a href="#">Lista de Autoridades</a></li>
 </ul></div>			</div>
 			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 				<h3 class="titulo-menu-rodape">Serviços</h3>
-				<div class="menu-rodape-servicos-container"><ul id="menu-rodape-servicos" class="menu"><li id="menu-item-231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-231"><a href="http://www.ms.gov.br/para-o-cidadao">Para o Cidadão</a></li>
-<li id="menu-item-233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-233"><a href="http://www.ms.gov.br/para-empresas">Para Empresas</a></li>
-<li id="menu-item-236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-236"><a href="http://www.ms.gov.br/para-o-servidor">Para o Servidor</a></li>
+				<div class="menu-rodape-servicos-container"><ul id="menu-rodape-servicos" class="menu"><li id="menu-item-231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-231"><a href="#">Para o Cidadão</a></li>
+<li id="menu-item-233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-233">
+	<a href="#">Para Empresas</a></li>
+<li id="menu-item-236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-236">
+	<a href="#">Para o Servidor</a></li>
 </ul></div>			</div>
 			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 				<h3 class="titulo-menu-rodape">Social</h3>
 				
-				<div class="menu-rodape-social-container"><ul id="menu-rodape-social" class="menu"><li id="menu-item-168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-168"><a target="_blank" href="https://www.facebook.com/GovernodeMatoGrossodoSul">Facebook</a></li>
-<li id="menu-item-169" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-169"><a target="_blank" href="http://www.instagram.com/governoms">Instagram</a></li>
-<li id="menu-item-167" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-167"><a target="_blank" href="https://twitter.com/GovernoMS">Twitter</a></li>
-</ul></div>			</div>
+				<div class="menu-rodape-social-container"><ul id="menu-rodape-social" class="menu">
+					<li id="menu-item-168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-168"><a target="_blank" href="#">Facebook</a>
+					</li>
+<li id="menu-item-169" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-169"><a target="_blank" href="#">Instagram</a>
+</li>
+<li id="menu-item-167" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-167"><a target="_blank" href="#">Twitter</a>
+</li>
+</ul>
+</div>			</div>
 			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 				<ul class="links">
                 	<li><a href="#">SEGOV</a></li>
@@ -770,11 +888,35 @@ var wpBannerizeJavascriptLocalization = {"ajaxURL":"http:\/\/www.ms.gov.br\/wp-a
 
 <!-- This site is patched against a big problem not solved since WordPress 2.5 -->
 
-<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true"><span><div class="cli-bar-container cli-style-v2"><div class="cli-bar-message">Utilizamos cookies para permitir uma melhor experiência em nosso website e para nos ajudar a compreender quais informações são mais úteis e relevantes para você. Por isso é importante que você concorde com a política de uso de cookies deste site.</div><div class="cli-bar-btn_container"><a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">Aceitar</a></div></div></span></div><div id="cookie-law-info-again" style="display:none;" data-nosnippet="true"><span id="cookie_hdr_showagain">Manage consent</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true">
+	<span>
+		<div class="cli-bar-container cli-style-v2">
+			<div class="cli-bar-message">Utilizamos cookies para permitir uma melhor experiência em nosso website e para nos ajudar a compreender quais informações são mais úteis e relevantes para você. Por isso é importante que você concorde com a política de uso de cookies deste site.
+	
+</div>
+	<div class="cli-bar-btn_container">
+		<a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; background-color: rgb(97, 162, 41); color: (255, 255, 255); ">Aceitar
+	</a>
+	</div>
+</div>
+</span>
+</div>
+<div id="cookie-law-info-again" style="display:none;" data-nosnippet="true"><span id="cookie_hdr_showagain">Manage consent
+
+</span>
+</div>
+<div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
   <div class="cli-modal-dialog" role="document">
 	<div class="cli-modal-content cli-bar-popup">
 	  	<button type="button" class="cli-modal-close" id="cliModalClose">
-			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<svg class="" viewBox="0 0 24 24">
+				<path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z">
+
+				</path>
+				<path d="M0 0h24v24h-24z" fill="none">
+
+				</path>
+			</svg>
 			<span class="wt-cli-sr-only">Fechar</span>
 	  	</button>
 	  	<div class="cli-modal-body">
@@ -934,31 +1076,7 @@ var wpBannerizeJavascriptLocalization = {"ajaxURL":"http:\/\/www.ms.gov.br\/wp-a
 
 		<script src="#"></script>
 		<script data-account="n4LcBHs32d" src="#"></script>
-		<script type="text/javascript">
-			new window.VLibras.Widget('https://vlibras.gov.br/app');
-			 
-			jQuery(document).ready(function($) {
-				$('header button').click(function(){
-					$(this).hasClass("ativo")?($(this).removeClass("ativo"),$("#header-menu").slideUp()):($(this).addClass("ativo"),$("#header-menu").slideDown())
-				});
-
-
-				jQuery('audio').each(function( index ) {
-					var source = jQuery(this).find('source').attr('src');
-					if ( source != '' ) {
-						jQuery('.mejs-audio').after('<div class="mt-3 mb-3 text-center"> <a href="' + source + '" class="btn btn-warning" download><small><strong>Download</strong></small></a> </div>');
-					}
-				});
-
-				jQuery('video').each(function( index ) {
-					var source = jQuery(this).find('source').attr('src');
-					if ( source != '' ) {
-						jQuery('.mejs-video').after('<div class="mt-3 mb-3 text-center"> <a href="' + source + '" class="btn btn-warning" download><small> <strong> Download </strong></small></a></div>');
-					}
-				});
-
-			});
-		</script>
+		
 		
 </body>
 </html> 
